@@ -114,11 +114,13 @@ button {
 }
 .menu-desktop .menu-close>span:nth-child(1) {
 	top: 50%;
-	transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(45deg);
+	        transform: rotateZ(45deg);
 }
 .menu-desktop .menu-close>span:nth-child(2) {
 	top: 50%;
-	transform: rotateZ(-45deg);
+	-webkit-transform: rotateZ(-45deg);
+	        transform: rotateZ(-45deg);
 }
 .menu-desktop ul {
 	list-style: none;
@@ -273,7 +275,8 @@ button {
 	position: absolute;
 	bottom: 30px;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	width: 50px;
 	height: 50px;
 	background: url(img/slidedown_arrow-white.png) no-repeat;
@@ -288,7 +291,8 @@ button {
 
 .sec1_content {
 	margin-top: 34vh;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	max-width: 800px;
 }
 .sec1_content h1 {
@@ -327,7 +331,8 @@ button {
 	position: relative;
 	margin: 0 auto;
 	cursor: pointer;
-	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
 	transition:all 1s ease;
 }
 button:before {
@@ -340,12 +345,15 @@ button:before {
 	left: 2px;
 	border:2px solid #fff;
 	border-radius: 30px;
-	transform: perspective(100px) translateZ(-20px);
-	transform-style: preserve-3d;
+	-webkit-transform: perspective(100px) translateZ(-20px);
+	        transform: perspective(100px) translateZ(-20px);
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
 	box-sizing: border-box;
 }
 button:hover {
-	transform: rotateX(360deg);
+	-webkit-transform: rotateX(360deg);
+	        transform: rotateX(360deg);
 }
 button>span {
 	position: absolute;
@@ -356,8 +364,10 @@ button>span {
 	font-size: 16px;
 	color: #fff;
 	font-weight: 700;
-	transform: perspective(100px) translateZ(20px);
-	transform-style: preserve-3d;
+	-webkit-transform: perspective(100px) translateZ(20px);
+	        transform: perspective(100px) translateZ(20px);
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
 	width: 100%;
 	display: block;
 	pointer-events: none;
@@ -394,8 +404,17 @@ button>span {
 	padding-left: 50px;
 	font-size: 18px;
 	/*opacity: 0;*/
-	animation: appear 1s linear;
+	-webkit-animation: appear 1s linear;
+	        animation: appear 1s linear;
 	color:#303030;
+}
+@-webkit-keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 @keyframes appear {
 	0% {
@@ -422,7 +441,8 @@ button>span {
 .pillars_block>span:nth-child(1) {
 	top: 78px;
 	left: 363px;
-	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+	        animation-delay: 0.4s;
 }
 .pillars_block>span:nth-child(1):before {
 	top: 10px;
@@ -430,27 +450,32 @@ button>span {
 .pillars_block>span:nth-child(2) {
 	top: 168px;
 	left:422px;
-	animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+	        animation-delay: 0.6s;
 }
 .pillars_block>span:nth-child(3) {
 	top: 268px;
 	left: 458px;
-	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+	        animation-delay: 0.8s;
 }
 .pillars_block>span:nth-child(4) {
 	top: 378px;
 	left: 458px;
-	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
 }
 .pillars_block>span:nth-child(5) {
 	top: 478px;
 	left: 425px;
-	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+	        animation-delay: 1.2s;
 }
 .pillars_block>span:nth-child(6) {
 	top: 568px;
 	left: 363px;
-	animation-delay: 1.4s;
+	-webkit-animation-delay: 1.4s;
+	        animation-delay: 1.4s;
 }
 
 #sec2 .banner {
@@ -746,7 +771,8 @@ button>span {
 }
 .sec5_content .calcSlide.active {
 	display: block;
-	animation:appear 0.7s linear;
+	-webkit-animation:appear 0.7s linear;
+	        animation:appear 0.7s linear;
 }
 .sec5_content .calcSlide .input_row {
 	display: flex;	
@@ -801,7 +827,8 @@ span.info>span.info_description:before {
 	height: 15px;
 	content: '';
 	background-color: #303030;
-	transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(45deg);
+	        transform: rotateZ(45deg);
 	z-index: 4;
 	top: -5px;
 	left: 30px;
@@ -832,7 +859,8 @@ span.info>span.info_description:before {
 	background-color: #7cace9;
 	position: absolute;
 	top: 15px;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 .sec5_content .calcSlide .input_row .input_wrap>input {
 	width: 90px;
@@ -860,12 +888,14 @@ span.info>span.info_description:before {
 .sec5_content .calcSlide .input_row .input_wrap .plus>span:nth-child(1){
 	top: 50%;
 	left: 0;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 .sec5_content .calcSlide .input_row .input_wrap .plus>span:nth-child(2){
 	top:15px;
 	left: 15px;
-	transform: translateX(-50%) rotateZ(90deg) translateY(-50%);
+	-webkit-transform: translateX(-50%) rotateZ(90deg) translateY(-50%);
+	        transform: translateX(-50%) rotateZ(90deg) translateY(-50%);
 }
 .sec5_content .calcSlide .input_row .input_wrap span {
 	font-size: 18px;
@@ -1178,7 +1208,8 @@ input:checked + label:before {
 	margin-right: 46px;
 	position: relative;
 	/*opacity: 0;*/
-	animation:appear 1s linear;
+	-webkit-animation:appear 1s linear;
+	        animation:appear 1s linear;
 }
 .order_block.active {
 	opacity: 1;
@@ -1228,19 +1259,24 @@ input:checked + label:before {
 	background-color: #b0bbf1;
 }
 .order_block:nth-child(1){
-	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+	        animation-delay: 0.4s;
 }
 .order_block:nth-child(2) {
-	animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+	        animation-delay: 0.6s;
 }
 .order_block:nth-child(3) {
-	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+	        animation-delay: 0.8s;
 }
 .order_block:nth-child(4) {
-	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
 }
 .order_block:nth-child(5) {
-	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+	        animation-delay: 1.2s;
 }
 
 
@@ -1284,7 +1320,8 @@ input:checked + label:before {
 	padding-top: 120px;
 }
 #sec9 .scrollDown {
-	transform: rotateX(180deg) translateX(-50%);
+	-webkit-transform: rotateX(180deg) translateX(-50%);
+	        transform: rotateX(180deg) translateX(-50%);
 }
 .sec9_content p.description {
 	text-align: center;
@@ -2072,7 +2109,8 @@ input:checked + label:before {
 		width: 296px;
 		max-width: 100%;
 		height: 48px;
-		transform: perspective(100px) translateZ(-20px) translateX(-2px) translateY(-1px);
+		-webkit-transform: perspective(100px) translateZ(-20px) translateX(-2px) translateY(-1px);
+		        transform: perspective(100px) translateZ(-20px) translateX(-2px) translateY(-1px);
 	}
 	.sec3_content .bottom_part p {
 		font-size: 14px;
@@ -2360,7 +2398,8 @@ input:checked + label:before {
 	.sec1_content {
 		max-width: 340px;
 		margin-top: 20px;
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
 	}
 	.sec1_content h1 {
 		text-align: left;
@@ -2437,10 +2476,12 @@ input:checked + label:before {
 		position: absolute;
 		top: 40px;
 		left: 50%;
-		transform: translateX(-165%);
+		-webkit-transform: translateX(-165%);
+		        transform: translateX(-165%);
 	}
 	#sec2 .banner button {
-		transform: translateX(-50px);
+		-webkit-transform: translateX(-50px);
+		        transform: translateX(-50px);
 	}
 	.pillars_block {
 		padding: 0 15px;
@@ -2495,7 +2536,8 @@ input:checked + label:before {
 		position: absolute;
 		top: 0;
 		left: 75px;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		max-width: 120px;
 		height: 85px;
 	}
@@ -2760,7 +2802,8 @@ input:checked + label:before {
 		position: absolute;
 		left: 50%;
 		bottom: 0;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		width: 300px;
 	}
 	#sec9 footer .links_footer a {
@@ -2900,7 +2943,8 @@ input:checked + label:before {
 		position: relative;
 		top: auto;
 		left: auto;
-		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 		float: left;
 	}
 	#sec2 .banner .text.large {
@@ -2954,7 +2998,8 @@ input:checked + label:before {
 		font-size: 17px;
 	}
 	#sec2 .banner button {
-		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 	}
 	.adv_block:nth-child(odd){
 		max-width: 120px;
