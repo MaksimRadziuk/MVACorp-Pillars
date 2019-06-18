@@ -16,12 +16,12 @@ $(document).ready(function(){
     easingcss3: 'ease-in',
     scrollBar: false,
     scrollOverflow: false,
-    parallax: true,
-    parallaxKey: '',
-    parallaxOptions: {
-        type: 'reveal',
-        percentage: 100
-    },
+    //parallax: true,
+    //parallaxKey: '',
+    //parallaxOptions: {
+    //    type: 'reveal',
+    //    percentage: 100
+    //},
     fitToSection:false,
     lockAnchors: false,
     navigation: false,
