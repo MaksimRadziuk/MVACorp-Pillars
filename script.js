@@ -9,7 +9,14 @@ $(document).ready(function(){
   });
 
   if (window.innerWidth>=900){
-  $('#fullpage').fullpage({
+    $('#fullpage').fullpage({
+      //options here
+      autoScrolling:true,
+      scrollHorizontally: true
+    });
+
+    
+ /* $('#fullpage').fullpage({
     //options here
     scrollingSpeed: 700,
     responsiveWidth:800,
@@ -60,7 +67,7 @@ $(document).ready(function(){
           $('.scrollDown').removeClass('black');
         }
     }        
-  });
+  });*/
 
   $('.scrollDown').click(function () {
       $.fn.fullpage.moveSectionDown();
@@ -120,6 +127,13 @@ $(document).ready(function(){
         $('.menu-close').removeClass('change');
       });
     }
+  });
+
+  $('#sideSizeTrigger').click(function(){
+    $('#sideSizePopup').toggleClass('active');
+  });
+  $('#sideSizePopup').click(function(){
+    $('#sideSizePopup').toggleClass('active');
   });
 
 });
