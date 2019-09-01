@@ -111,8 +111,6 @@ $(document).ready(function(){
     $('#sideSizePopup').toggleClass('active');
   });
 
-
-
 });
 
 
